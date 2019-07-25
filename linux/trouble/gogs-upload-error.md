@@ -6,9 +6,10 @@
 找到.git文件  
 找到config文件并打开  
 在后面添加  
-	> [http]
-	postBuffer = 524288000  
-
+```
+[http]  
+postBuffer = 524288000  
+```
 ## 若修改后仍然报错 error: RPC failed; HTTP 413 curl 22 The requested URL returned error: 413 Request Entity Too Large  
 
 ##### 因为上传大文件时，若gogos使用nginx反代的话 一般nginx会返回413错误。
